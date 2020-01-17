@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="main.css">
+    <title>JZ 94.5 | The People's Station</title>
+    <link rel="shortcut icon" type="image/png" href="Assets/favicon 100px.png" />
+    <meta name="description" content="
+        About
+        The #1 radio station on the MS Gulf Coast for the best mix of R&B, Hip Hop, Blues, and Oldies!">
+    <meta name="keywords"
+        content="Radio, JZ 94.5, The people station, R&B, Hip Hop, Blues, MS Gulf Coast, Mississippi Gulfcoast">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js">
+    </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="vivify.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="manifest" href="manifest.json">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.getJSON('https://api.sheety.co/68a4a98a-89da-41d5-a960-eae38047b504', function (data) {
+                var template = Handlebars.compile($('#item-template').html())
+                $('#items').html(template(data))
+            })
+        })
+    </script>
+
+    <script id="item-template" type="text/x-handlebars-template">
+
+        {{#each this}}
+        <div class="card black vivify fadeIn">
+            <style>
+                a {color:black;}
+                </style>
+            <div class="card-image">
+              {{{image}}}
+          
+            </div>
+            <div class="card-content">
+                    <span class="card-title">{{title}}</span>
+              <p>{{description}}</p>
+            </div>
+            <div class="card-action ">
+              <a href="#" class="white-text waves-effect waves-light" style="padding: 10px;border-radius: 5px;;margin-top: -5px;margin-bottom: -5px;;">Learn More</a>
+            </div>
+          </div>
+    {{/each}}
+   
+
+
+</script>
+</head>
+
+<body>
+    <nav>
+        <div class="logo-container">
+            <img src="branding/Jz large white logo.png">
+        </div>
+        <a class="menu-btn" href="#menu">
+        <i class="material-icons">menu</i>
+    </a>
+    </nav>
+
+
+
+    <div id="menu" class="side-navigation">
+       <a href="#"><div class="erase vivify fadeIn"></div></a> 
+     <div class="sub-side-container vivify fadeInRight delay-100 duration-300">
+         <img class="vivify fadeIn" src="/Branding/Jz large white logo.png">
+         <ul>
+             <li class="side-active"><a>Home</a></li>
+             <li><a>Meet The DJ'Z</a></li>
+             <li><a>Sales Team</a></li>
+             <li><a>Contests</a></li>
+             <li><a>Contact</a></li>
+         </ul>
+     </div>   
+    </div>
+
+
+    <div class="content-container">
+    <div class="image-viewer">
+        <div data-aos="fade-up" data-aos-delay="700" class="text-container">
+           <h3 >Breakfast Club</h3>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae omnis error necessitatibus hic harum consectetur distinctio deserunt cum laborum eos.</p> 
+           <a href="/index.html">Learn More</a>
+        </div>
+        <img class="vivify fadeIn" src="/Images/breakfast club.png">
+    </div>
+</div>
+
+<script>
+    AOS.init();
+</script>
+</body>
+
+</html>

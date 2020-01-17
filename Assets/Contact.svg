@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="57" height="53" viewBox="0 0 57 53">
+  <defs>
+    <clipPath id="clip-Contact">
+      <rect width="57" height="53"/>
+    </clipPath>
+  </defs>
+  <g id="Contact" clip-path="url(#clip-Contact)">
+    <g id="play_circle_outline-24px" transform="translate(18 8.065)">
+      <path id="Path_135" data-name="Path 135" d="M0,0H21.935V21.935H0Z" fill="none"/>
+      <path id="Path_136" data-name="Path 136" d="M9.312,15.252,14.8,11.14,9.312,7.027ZM11.14,2a9.14,9.14,0,1,0,9.14,9.14A9.143,9.143,0,0,0,11.14,2Zm0,16.451a7.312,7.312,0,1,1,7.312-7.312A7.321,7.321,0,0,1,11.14,18.451Z" transform="translate(-0.172 -0.172)" fill="#fff"/>
+    </g>
+    <text id="Listen" transform="matrix(1, -0.017, 0.017, 1, 7.907, 27.359)" fill="#fff" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="5.11" y="13">Listen</tspan></text>
+  </g>
+</svg>

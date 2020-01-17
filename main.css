@@ -1,0 +1,203 @@
+body {
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    ;
+    ;
+    ;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h3,
+p,
+h2,
+h4 {
+    color: white;
+    ;
+}
+
+/*---------------------------Navigation-----------------------------------*/
+
+#listen {
+    display: none;
+}
+
+#listen:target {
+    display: block;
+}
+
+#Contact {
+    display: none;
+}
+
+#Contact:target {
+    display: block;
+}
+
+#AboutUs {
+    display: none;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+height: 100%;
+    left: 0px;
+    z-index: 100;
+    background-color: black;
+}
+
+#AboutUs:target {
+    display: block;
+    ;
+}
+
+.menu-btn {position: fixed; right: 12px;top: 0px;padding: 10px;}
+
+nav {
+    background-color: transparent !important;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 70px !important;
+    z-index: 130;
+    box-shadow: none !important;
+}
+
+
+.logo-container>img {
+    width: 120px;
+}
+
+.logo-container {
+    margin: auto;
+    width: 120px;
+    margin-top: 20px;
+}
+
+.card-image>a>img {
+    filter: brightness(0.7);
+    ;
+}
+
+.card-title {
+    color: white;
+    ;
+}
+
+.listen-frame {
+    filter: invert(100);
+}
+
+.color-space {
+    filter: brightness(2);
+}
+
+.card-image>a {
+    pointer-events: none;
+}
+
+/*-------------------------Bottom-Navigation------------------------------*/
+
+.bottom-navigation {
+    position: fixed;
+    bottom: 0px;
+    z-index: 350;
+    width: 100%;
+    background-color: black;
+    height: 53px;
+    border-top: solid;
+    border-top-width: 1px;
+    border-top-color: rgb(39, 39, 39);
+}
+
+.bottom-nav-wrapper {
+    margin: auto;
+    width: 320px;
+
+}
+
+.bottom-nav-wrapper>a button {
+    margin-left: 7px;
+    background-color: transparent !important;
+    border: none;
+}
+
+
+.bottom-nav-wrapper>a>button>img {
+    filter: brightness(0.75)
+}
+
+.bottom-nav-wrapper>a>button>img:focus {
+    filter: brightness(1)
+}
+
+.listen-container {
+
+
+}
+
+/*-------------------------------------------Side Navigation----------------------------*/
+#menu {display: none;;}
+
+#menu:target {display: block;}
+
+.side-navigation {}
+
+.sub-side-container {width: 260px;background-color: black;height: 100vh;float: right;position:fixed;  height:100vh;z-index:150;right: 0px;}
+
+.sub-side-container > img {width: 120px;margin-left: 64px;margin-top: 20px;}
+
+.sub-side-container > ul > li {width:240px;background-color: transparent;padding-left: 10px;padding-top: 10px;padding-bottom: 10px;margin-top: 5px;border-radius: 5px;margin-left: 10px;color: white !important;}
+
+.sub-side-container > ul > li > a {color: white !important;}
+
+.side-active {background-color: #171717 !important;}
+
+.erase {position: fixed; width: 100%; height: 105vh; background-color: black; z-index: 149; filter: blur(10px);opacity: 1;  background: rgba(0, 0, 0, 0.493);
+    backdrop-filter: blur(10px);margin-left:-50px;margin-top: -10px;}
+/*---------------------------------------------Contact Us---------------------------------------------*/
+#contact-us {color: white;;}
+
+.element > h5 {color: white !important;font-size: 20px;}
+
+.element {border-top: solid 1px rgb(59, 59, 59);;}
+
+.info-container {margin: auto; width: 95%;;}
+
+#Contact-Us {margin-bottom: 100px;;}
+
+.dj-item>img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    ;
+}
+
+.dj-item>h3 {
+    font-size: 30px !important;
+}
+
+.dj-container {
+    margin: auto;
+    width: 93%;
+ margin-top: 80px;;
+ margin-bottom: 70px;
+}
+
+.contact-sect {width: 100%; height: 100vh;margin-top: 100vh;}
+
+/*------------------------------------IMage Viewing------------------------------------*/
+
+.image-viewer > img {position: absolute; width: 100%; height: 100vh;background-color: red;border: none;object-fit: cover;filter: brightness(0.7);top: 0px;}
+
+.text-container {position: absolute; left: 0px; top: 150px;z-index: 50;;margin-left: 20px;}
+
+.text-container > h3 {font-weight: 500; margin: 0px; padding: 0px;}
+
+.text-container > p {width: 88vw;}
+
+.text-container > a {font-weight: 500;color: white !important;}

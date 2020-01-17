@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="57" height="53" viewBox="0 0 57 53">
+  <defs>
+    <clipPath id="clip-Home">
+      <rect width="57" height="53"/>
+    </clipPath>
+  </defs>
+  <g id="Home" clip-path="url(#clip-Home)">
+    <g id="home-24px" transform="translate(17 8)">
+      <path id="Path_133" data-name="Path 133" d="M0,0H24V24H0Z" fill="none"/>
+      <path id="Path_134" data-name="Path 134" d="M12,5.69l5,4.5V18H15V12H9v6H7V10.19l5-4.5M12,3,2,12H5v8h6V14h2v6h6V12h3Z" fill="#fff"/>
+    </g>
+    <text id="Home-2" data-name="Home" transform="matrix(1, -0.017, 0.017, 1, 7.907, 28.359)" fill="#fff" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="4.419" y="13">Home</tspan></text>
+  </g>
+</svg>
