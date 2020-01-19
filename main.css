@@ -197,7 +197,7 @@ transition: 0.2s ease;
 
 /*------------------------------------IMage Viewing------------------------------------*/
 
-.image-viewer > img {position: absolute; width: 100%; height: 100vh;border: none;object-fit: cover;filter: brightness(0.4);top: 0px;}
+.image-viewer > img {position: absolute; width: 100%; height: 100vh;background-color: black;border: none;object-fit: cover;filter: brightness(0.4);top: 0px;}
 
 .text-container {position: absolute; left: 0px; top: 0px;z-index: 50;;margin-left: 20px;margin-top: 24vh;}
 
@@ -207,6 +207,6 @@ transition: 0.2s ease;
 
 .text-container > a {font-weight: 500;color: white !important;}
 
-.home-scroll {position: absolute; bottom: 0px; z-index:50;width: 100%; overflow: scroll;white-space: nowrap;padding-top: 10px;padding-bottom: 10px;background-color: black;}
+.home-scroll {position: absolute; bottom: 0px; z-index:50;width: 100%; overflow: scroll;white-space: nowrap;padding-top: 10px;padding-bottom: 10px;;}
 
 .home-scroll > a > img {width: 130px;height: 203px; object-fit: cover;display: inline-block;margin-left: 13px;border-radius:10px;}
