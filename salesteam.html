@@ -20,8 +20,6 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="vivify.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link rel="manifest" href="manifest.json">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript">
@@ -71,7 +69,7 @@
      </div>   
     </div>
 
-<h1 class="page-indicator vivify fadeIn">Salesteam</h1>
+<h1 class="page-indicator vivify fadeIn" id="pg-indicator">Salesteam</h1>
   <div class="salesteam people-container">
 
     <div class="person vivify fadeIn delay-100" >
@@ -171,6 +169,16 @@
             $("#nav-scroll").addClass("active");
         } else {
             $("#nav-scroll").removeClass("active");
+        }
+    });
+</script>
+<script>
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        if (scroll > 0) {
+            $("#pg-indicator").addClass("scrolled");
+        } else {
+            $("#pg-indicator").removeClass("scrolled");
         }
     });
 </script>
