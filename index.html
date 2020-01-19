@@ -33,12 +33,22 @@
     </script>
 
     <script id="item-template" type="text/x-handlebars-template">
-        <div class="home-scroll">
+       
         {{#each this}}
-   {{{imageUrl}}}
+
+        <div class="mySlides1 {{postValue}}">
+            <div class="image-viewer">
+                <div  class="text-container">
+                   <h3 >{{title}}</h3>
+                   <p>{{description}}</p> 
+                   <a href="/index.html">Learn More</a>
+                </div>
+               {{{imageUrl}}}
+            </div>
+    </div>
     {{/each}}
    
-</div>
+
 
 </script>
 </head>
@@ -75,35 +85,14 @@
 
     <div class="content-container">
    
-       
-            <div class="mySlides1 {{postValue}}">
-                <div class="image-viewer">
-                    <div data-aos="fade-up" data-aos-delay="700" class="text-container">
-                       <h3 >Breakfast Club</h3>
-                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae omnis error necessitatibus hic harum consectetur distinctio deserunt cum laborum eos.</p> 
-                       <a href="/index.html">Learn More</a>
-                    </div>
-                    <img class="vivify fadeIn" src="/Images/breakfast club.png">
-                </div>
-        </div>
-        <div class="mySlides1 {{postValue}}">
-            <div class="image-viewer">
-                <div data-aos="fade-up" data-aos-delay="700" class="text-container vivify fadeIn">
-                   <h3 >Test Post</h3>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae omnis error necessitatibus hic harum consectetur distinctio deserunt cum laborum eos.</p> 
-                   <a href="/index.html">Learn More</a>
-                </div>
-                <img class="vivify fadeIn" src="/Images/DJ Banners_NewDay.jpg">
-            </div>
-            
-        </div>
- 
+       <div id="items"></div>
       
 </div>
 
 
 
 <div class="contact-sect" style="width: 100%; height:100vh; background-color:green;">
+    <h1 class="page-indicator vivify fadeIn" id="pg-indicator">Contact Us</h1>
     <div class="form-container">
         <form action="/complete.html" data-netlify="true" name="JZ 94.5 Contact Form">
             <label>Message Us</label>

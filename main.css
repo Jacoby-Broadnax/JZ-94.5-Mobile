@@ -207,7 +207,7 @@ ul {padding-left: 0px;}
 
 /*------------------------------------IMage Viewing------------------------------------*/
 
-.image-viewer > img {position: absolute; width: 100%; height: 100vh;background-color: black;border: none;object-fit: cover;filter: brightness(0.4);top: 0px;}
+.image-viewer > a > img {position: absolute; width: 100%; height: 100vh;background-color: black;border: none;object-fit: cover;filter: brightness(0.4);top: 0px;}
 
 .text-container {position: absolute; left: 0px; bottom: 100px;z-index: 50;;margin-left: 20px;}
 
