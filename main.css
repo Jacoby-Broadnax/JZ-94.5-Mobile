@@ -197,7 +197,7 @@ transition: 0.2s ease;
 
 /*------------------------------------IMage Viewing------------------------------------*/
 
-.image-viewer > img {position: absolute; width: 100%; height: 100vh;background-color: black;border: none;object-fit: cover;filter: brightness(0.4);top: 0px;}
+.image-viewer > img {position: absolute; width: 100%; height: 100vh;border: none;object-fit: cover;filter: brightness(0.4);top: 0px;}
 
 .text-container {position: absolute; left: 0px; top: 0px;z-index: 50;;margin-left: 20px;margin-top: 24vh;}
 
