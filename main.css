@@ -24,7 +24,7 @@ h4 {
 
 .listen-live {position: fixed; left: 10px;top: 8px;background-color: transparent;margin: 0px;}
 
-.listen-live > button {height: 30px;background-color: transparent; border: solid 1px white;border-radius: 50px;color: white;;}
+.listen-live > button {height: 30px;background-color: transparent; border: solid 2px white;border-radius: 50px;color: white;;}
 
 #listen {
     display: none;
