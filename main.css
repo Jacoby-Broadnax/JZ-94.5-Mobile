@@ -70,7 +70,7 @@ nav {
 transition: 0.2s ease;
 }
 
-.page-indicator {color: white;font-weight: 500;margin-top: 70px;margin-left: 15px;font-size: 52px;}
+.page-indicator {color: white;font-weight: 500;margin-top: 70px;margin-left: 15px;font-size: 52px;margin-bottom: 20px;}
 
 #nav-scroll.active {background-color: black !important; }
 
