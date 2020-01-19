@@ -221,7 +221,7 @@ ul {padding-left: 0px;}
 
 .home-scroll > a > img {width: 130px;height: 203px; object-fit: cover;display: inline-block;margin-left: 13px;border-radius:10px;}
 
-.exc {position: static;;margin-bottom: 13px;}
+.exc {position: static;;margin-bottom: 13px;margin-top: 10px;}
 
 /*--------------------------------------Content-card-------------------------------------*/
 
