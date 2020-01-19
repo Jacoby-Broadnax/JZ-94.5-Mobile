@@ -22,6 +22,8 @@ h4 {
 
 /*---------------------------Navigation-----------------------------------*/
 
+
+
 #listen {
     display: none;
 }
@@ -54,7 +56,7 @@ height: 100%;
     ;
 }
 
-.menu-btn {position: fixed; right: 12px;top: 0px;padding: 10px;}
+.menu-btn {position: fixed; right: 12px;top: -4px;padding: 10px;}
 
 nav {
     background-color: transparent !important;
@@ -65,8 +67,10 @@ nav {
     height: 70px !important;
     z-index: 130;
     box-shadow: none !important;
+transition: 0.2s ease;
 }
 
+#nav-scroll.active {background-color: black !important;    padding-bottom: 20px;}
 
 .logo-container>img {
     width: 120px;
@@ -75,7 +79,8 @@ nav {
 .logo-container {
     margin: auto;
     width: 120px;
-    margin-top: 20px;
+    margin-top: 15px;
+    ;
 }
 
 .card-image>a>img {
@@ -141,13 +146,13 @@ nav {
 }
 
 /*-------------------------------------------Side Navigation----------------------------*/
-#menu {display: none;;}
+#menu {display: none;position: fixed; top: 0px; left: 0px;;z-index: 150;}
 
 #menu:target {display: block;}
 
 .side-navigation {}
 
-.sub-side-container {width: 260px;background-color: black;height: 100vh;float: right;position:fixed;  height:100vh;z-index:150;right: 0px;}
+.sub-side-container {width: 260px;background-color: black;height: 100vh;float: right;position:fixed;  height:100vh;z-index:150;right: 0px;top: 0px;}
 
 .sub-side-container > img {width: 120px;margin-left: 64px;margin-top: 20px;}
 
@@ -158,7 +163,7 @@ nav {
 .side-active {background-color: #171717 !important;}
 
 .erase {position: fixed; width: 100%; height: 105vh; background-color: black; z-index: 149; filter: blur(10px);opacity: 1;  background: rgba(0, 0, 0, 0.493);
-    backdrop-filter: blur(10px);margin-left:-50px;margin-top: -10px;}
+    backdrop-filter: blur(10px);margin-left:-50px;margin-top: -10px;top: 0px;left: 0px;}
 /*---------------------------------------------Contact Us---------------------------------------------*/
 #contact-us {color: white;;}
 
@@ -192,7 +197,7 @@ nav {
 
 /*------------------------------------IMage Viewing------------------------------------*/
 
-.image-viewer > img {position: absolute; width: 100%; height: 100vh;background-color: red;border: none;object-fit: cover;filter: brightness(0.7);top: 0px;}
+.image-viewer > img {position: absolute; width: 100%; height: 100vh;background-color: black;border: none;object-fit: cover;filter: brightness(0.4);top: 0px;}
 
 .text-container {position: absolute; left: 0px; top: 0px;z-index: 50;;margin-left: 20px;margin-top: 24vh;}
 
@@ -202,6 +207,6 @@ nav {
 
 .text-container > a {font-weight: 500;color: white !important;}
 
-.home-scroll {position: absolute; bottom: 0px; z-index:50;width: 100%; overflow: scroll;white-space: nowrap;padding-top: 10px;padding-bottom: 10px;}
+.home-scroll {position: absolute; bottom: 0px; z-index:50;width: 100%; overflow: scroll;white-space: nowrap;padding-top: 10px;padding-bottom: 10px;background-color: black;}
 
 .home-scroll > a > img {width: 130px;height: 203px; object-fit: cover;display: inline-block;margin-left: 13px;border-radius:10px;}
