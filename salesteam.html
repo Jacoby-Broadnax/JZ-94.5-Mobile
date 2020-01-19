@@ -24,20 +24,27 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-            $.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/jz945/data1', function (data) {
+            $.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/jz945/data3', function (data) {
                 var template = Handlebars.compile($('#item-template').html())
-                $('#items').html(template(data.data1))
+                $('#items').html(template(data.data3))
             })
         })
     </script>
 
     <script id="item-template" type="text/x-handlebars-template">
-        <div class="home-scroll">
+        
         {{#each this}}
-   {{{imageUrl}}}
+        <div class="person vivify fadeIn delay-100" >
+           {{{imageUrl}}}
+            <h3>{{title}}</h3>
+            <p>{{description}}</p>
+            <div class="link-container">
+                <a href="#">Contact</a>
+            </div>
+          
+        </div>
     {{/each}}
    
-</div>
 
 </script>
 </head>
@@ -74,60 +81,10 @@
 <h1 class="page-indicator vivify fadeIn" id="pg-indicator">Salesteam</h1>
   <div class="salesteam people-container">
 
-    <div class="person vivify fadeIn delay-100" >
-        <img src="/Assets/GrayPlaceholder.png">
-        <h3>Basic Name</h3>
-        <p>Technical Director</p>
-        <div class="link-container">
-            <a href="#">Contact</a>
-        </div>
-      
-    </div>
-    <div class="person vivify fadeIn delay-100" >
-        <img src="/Assets/GrayPlaceholder.png">
-        <h3>Placeholder</h3>
-        <p>Director</p>
-        <div class="link-container">
-            <a href="#">Contact</a>
-        </div>
-      
-    </div>
-    <div class="person vivify fadeIn delay-100" >
-        <img src="/Assets/GrayPlaceholder.png">
-        <h3>Placeholder</h3>
-        <p>Director</p>
-        <div class="link-container">
-            <a href="#">Contact</a>
-        </div>
-      
-    </div>
-    <div class="person vivify fadeIn delay-100" >
-        <img src="/Assets/GrayPlaceholder.png">
-        <h3>Placeholder</h3>
-        <p>Director</p>
-        <div class="link-container">
-            <a href="#">Contact</a>
-        </div>
-      
-    </div>
-    <div class="person vivify fadeIn delay-100" >
-        <img src="/Assets/GrayPlaceholder.png">
-        <h3>Placeholder</h3>
-        <p>Director</p>
-        <div class="link-container">
-            <a href="#">Contact</a>
-        </div>
-      
-    </div>
-    <div class="person vivify fadeIn delay-100" >
-        <img src="/Assets/GrayPlaceholder.png">
-        <h3>Placeholder</h3>
-        <p>Director</p>
-        <div class="link-container">
-            <a href="#">Contact</a>
-        </div>
-      
-    </div>
+   <div id="items">
+
+   </div>
+   
    
   </div>
 
