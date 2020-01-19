@@ -51,6 +51,32 @@
 
 
 </script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/jz945/data1', function (data) {
+            var template = Handlebars.compile($('#item-template2').html())
+            $('#items2').html(template(data.data1))
+        })
+    })
+</script>
+
+<script id="item-template2" type="text/x-handlebars-template">
+   
+    {{#each this}}
+
+    <div class="content-card" data-aos="fade-up">
+      {{{imageUrl}}}
+        <div  class="text-container vivify fadeIn exc">
+            <h3 >{{title}}</h3>
+            <p>{{description}}</p> 
+            <a href="/index.html">Learn More</a>
+         </div>
+    </div>
+{{/each}}
+
+
+
+</script>
 </head>
 
 <body>
@@ -93,59 +119,9 @@
 
 <div class="main-content-container">
     <h1 class="page-indicator vivify fadeIn" id="pg-indicator" data-aos="fade-up">News</h1>
-    <div class="content-card" data-aos="fade-up">
-        <a><img src="/Images/Contact.png"></a>
-        <div  class="text-container vivify fadeIn exc">
-            <h3 >Placeholder</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, facilis! Laborum voluptatem sapiente vero maiores quae quaerat. Sunt, reprehenderit ex!</p> 
-            <a href="/index.html">Learn More</a>
-         </div>
-    </div>
 
-    <div class="content-card" data-aos="fade-up">
-        <a><img src="/Images/Contact.png"></a>
-        <div  class="text-container vivify fadeIn exc">
-            <h3 >Placeholder</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, facilis! Laborum voluptatem sapiente vero maiores quae quaerat. Sunt, reprehenderit ex!</p> 
-            <a href="/index.html">Learn More</a>
-         </div>
-    </div>
-
-    <div class="content-card" data-aos="fade-up">
-        <a><img src="/Images/Contact.png"></a>
-        <div  class="text-container vivify fadeIn exc">
-            <h3 >Placeholder</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, facilis! Laborum voluptatem sapiente vero maiores quae quaerat. Sunt, reprehenderit ex!</p> 
-            <a href="/index.html">Learn More</a>
-         </div>
-    </div>
-
-    <div class="content-card" data-aos="fade-up">
-        <a><img src="/Images/Contact.png"></a>
-        <div  class="text-container vivify fadeIn exc">
-            <h3 >Placeholder</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, facilis! Laborum voluptatem sapiente vero maiores quae quaerat. Sunt, reprehenderit ex!</p> 
-            <a href="/index.html">Learn More</a>
-         </div>
-    </div>
-
-    <div class="content-card" data-aos="fade-up">
-        <a><img src="/Images/Contact.png"></a>
-        <div  class="text-container vivify fadeIn exc">
-            <h3 >Placeholder</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, facilis! Laborum voluptatem sapiente vero maiores quae quaerat. Sunt, reprehenderit ex!</p> 
-            <a href="/index.html">Learn More</a>
-         </div>
-    </div>
-
-    <div class="content-card" data-aos="fade-up">
-        <a><img src="/Images/Contact.png"></a>
-        <div  class="text-container vivify fadeIn exc">
-            <h3 >Placeholder</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, facilis! Laborum voluptatem sapiente vero maiores quae quaerat. Sunt, reprehenderit ex!</p> 
-            <a href="/index.html">Learn More</a>
-         </div>
-    </div>
+<div id="items2"></div>
+   
 </div>
 
 <div class="contact-sect" style="width: 100%; height:100vh; background-color:green;">
