@@ -221,6 +221,12 @@ ul {padding-left: 0px;}
 
 .home-scroll > a > img {width: 130px;height: 203px; object-fit: cover;display: inline-block;margin-left: 13px;border-radius:10px;}
 
+.exc {position: static;;}
+
+/*--------------------------------------Content-card-------------------------------------*/
+
+.content-card > a > img {width: 100%;;}
+
 /*------------------------------------People Containe-------------------------------------*/
 
 .person {width: 49%;display: inline-block;margin-left: 1px;margin-bottom: 10px;}
