@@ -34,7 +34,7 @@
     <script id="item-template" type="text/x-handlebars-template">
         
         {{#each this}}
-        <div class="person vivify fadeIn delay-100" >
+        <div class="person vivify fadeIn delay-100" data-aos="fade-up">
            {{{imageUrl}}}
             <h3>{{title}}</h3>
             <p>{{description}}</p>
@@ -69,9 +69,9 @@
      <div class="sub-side-container vivify fadeInRight delay-100 duration-300">
          <img class="vivify fadeIn" src="/Branding/Jz large white logo.png">
          <ul>
-            <li class="side-active"><a href="index.html">Home</a></li>
+            <li ><a href="index.html">Home</a></li>
             <li><a href="dj.html">Meet The DJ'Z</a></li>
-            <li><a href="salesteam.html">Sales Team</a></li>
+            <li class="side-active"><a href="salesteam.html">Sales Team</a></li>
             <li><a href="contest.html">Contests</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
