@@ -3,7 +3,7 @@ body {
     margin: 0px;
     padding: 0px;
     scroll-behavior: smooth;
-    font-family: roboto;
+    font-family: roboto, sans-serif;
 }
 
 html {
@@ -233,7 +233,7 @@ ul {padding-left: 0px;}
 
 /*--------------------------------------Content-card-------------------------------------*/
 
-.content-card > a > img {width: 100%;;}
+.content-card > a > img {width: 100%;;pointer-events: none;}
 
 /*------------------------------------People Containe-------------------------------------*/
 
@@ -264,7 +264,7 @@ border-radius: 6px;padding-left: 7px;margin-top: 12px;}
 form > input:first-of-type {margin-top: 20px;}
 
 form > textarea {width: 97%;height: 60px;border: solid 2px white;background-color: black;
-    border-radius: 6px;padding-left: 7px;margin-top: 12px;padding-top: 10px;}
+    border-radius: 6px;padding-left: 7px;margin-top: 12px;padding-top: 10px;color:white;}
 
 form > select {width: 60%; height: 40px;background-color: black; color: white; border: solid;border-radius: 6px;
 margin-top: 12px;}
