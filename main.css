@@ -229,9 +229,10 @@ ul {padding-left: 0px;}
 
 .home-scroll > a > img {width: 130px;height: 203px; object-fit: cover;display: inline-block;margin-left: 13px;border-radius:10px;}
 
-.exc {position: static;;margin-bottom: 25px;margin-top: 15px;}
+.exc {position: static;;margin-bottom: 25px;padding-top: 15px;;}
 
 /*--------------------------------------Content-card-------------------------------------*/
+.content-card {;}
 
 .content-card > a > img {width: 100%;;pointer-events: none;}
 
@@ -274,3 +275,27 @@ form > label {color: white;font-size: 20px;}
 .form-button-container {margin: auto; width: 50px;margin-top: 20px;margin-bottom: 50px;}
 
 .form-button-container > button {background-color:transparent; color: white;font-size: 16px;border: none;;}
+
+/*---------------------------------------Listen Live---------------------------------*/
+
+.sub-btn {float: left;}
+
+.audio-container {margin:auto; margin-top: 40vh;width: 290px;}
+
+.sub-btn > button {color: black;width: 70px; height: 70px;}
+
+.sub-btn > button > i {font-size: 35px;}
+
+.audio-text-container {float: left;width:200px;color: white;margin-left: 10px;}
+
+.audio-text-container > h1 {font-weight: bold;margin-bottom: 0px;margin-top: 7px;}
+
+.audio-text-container > p {font-size: 15px;margin-top: 10px;}
+
+.live-feed {margin-top: 50px;background-color: black;}
+
+.background-video {position: fixed; top: 0px ;z-index: -1;opacity: 0.3;}
+
+.background-video > video {width: 100%;z-index: -1;object-fit: cover;height: 60vh;}
+
+.pad-re:first-of-type {padding-top: 0px;margin-top: 0px;}
