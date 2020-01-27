@@ -280,7 +280,7 @@ form > label {color: white;font-size: 20px;}
 
 .sub-btn {float: left;}
 
-.audio-container {margin:auto; margin-top: 40vh;width: 290px;}
+.audio-container {margin:auto; margin-top: 20vh;width: 290px;padding-bottom: 20vh;}
 
 .sub-btn > button {color: black;width: 70px; height: 70px;}
 

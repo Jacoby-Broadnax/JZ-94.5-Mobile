@@ -88,26 +88,33 @@
         <audio id="player" autoplay>
             <source src='http://ccfcon11.primcast.com:9124/;' type='audio/mpeg'/>
           </audio>
- 
+          <div class="audio-text-container">
+            <h1>Listen Live</h1>
+            <p>JZ 94.5 | The People's Station</p>
+            </div>
 </div>
 
-<div class="audio-text-container">
-<h1>Listen Live</h1>
-<p>JZ 94.5 | The People's Station</p>
-</div>
+
 <br>
 <div id="items2" class="live-feed"> </div>
+<div class="background-video" >
+    <video id="video" autoplay loop muted class="vivify fadeIn delay-1500">
+        <source src="/Assets/Pexels Videos 2112426.mp4" autoplay>
+    </video>
+</div>
 <script>
     var button = document.getElementById("button");
 var audio = document.getElementById("player");
-
+var video = document.getElementById("video");
 button.addEventListener("click", function(){
   if(audio.paused){
     audio.play();
     button.innerHTML = "<i class='material-icons'>pause</i>";
+    video.play();
   } else {
     audio.pause();
     button.innerHTML = "<i class='material-icons'>play_arrow</i>";
+    video.pause();
   }
 });
     </script>
@@ -166,11 +173,7 @@ button.addEventListener("click", function(){
 <script>
     AOS.init();
 </script>
-<div class="background-video">
-    <video autoplay loop>
-        <source src="/Assets/Pexels Videos 2112426.mp4" autoplay>
-    </video>
-</div>
+
 </body>
 
 </html>
