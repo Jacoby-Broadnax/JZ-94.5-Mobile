@@ -154,7 +154,7 @@ transition: 0.2s ease;
 
 .mini-loader {margin: auto; width: 150px;margin-top: 30vh;}
 
-.mini-loader > img {width: 100%;filter: invert();}
+.mini-loader > img {width: 100%;}
 
 /*-------------------------------------------Side Navigation----------------------------*/
 #menu {display: none;position: fixed; top: 0px; left: 0px;;z-index: 150;}
