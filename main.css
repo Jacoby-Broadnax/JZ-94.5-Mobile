@@ -213,7 +213,7 @@ ul {padding-left: 0px;}
 
 /*------------------------------------IMage Viewing------------------------------------*/
 
-.image-viewer > a > img {position: absolute; width: 100%; height: 100vh;background-color: black;border: none;object-fit: cover;filter: brightness(0.4);top: 0px;}
+.image-viewer > div > a > img {position: absolute; width: 100%; height: 100vh;background-color: black;border: none;object-fit: cover;filter: brightness(0.4);top: 0px;}
 
 .image-viewer > a {pointer-events: none;}
 
