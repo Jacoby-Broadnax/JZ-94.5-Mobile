@@ -267,12 +267,12 @@ ul {padding-left: 0px;}
 .form-container {margin: auto; width: 90%;margin-top: 50px;}
 
 form > input {width: 97%;height: 40px;border: solid 2px white;background-color: black;
-border-radius: 6px;padding-left: 7px;margin-top: 12px;}
+border-radius: 6px;padding-left: 7px;margin-top: 12px;color:white}
 
 form > input:first-of-type {margin-top: 20px;}
 
 form > textarea {width: 97%;height: 60px;border: solid 2px white;background-color: black;
-    border-radius: 6px;padding-left: 7px;margin-top: 12px;padding-top: 10px;color:white;}
+    border-radius: 6px;padding-left: 7px;margin-top: 12px;padding-top: 10px;color:white;font-family: roboto, sans-serif;}
 
 form > select {width: 60%; height: 40px;background-color: black; color: white; border: solid;border-radius: 6px;
 margin-top: 12px;}
