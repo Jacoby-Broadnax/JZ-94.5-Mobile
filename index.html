@@ -4,6 +4,7 @@
 <head>
     <link rel="stylesheet" href="main.css">
     <title>JZ 94.5 | The People's Station</title>
+    <link rel="manifest" href="manifest.json">
     <link rel="shortcut icon" type="image/png" href="Assets/favicon 100px.png" />
     <meta name="theme-color" content="#000000"/>
     <meta name="description" content="
@@ -23,6 +24,23 @@
 
     <link rel="manifest" href="manifest.json">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script >
+
+        if ("serviceWorker" in navigator) {
+          if (navigator.serviceWorker.controller) {
+            console.log("service worker found, no need to register");
+          } else {
+            navigator.serviceWorker
+              .register("pwabuilder-sw.js", {
+                scope: "/index.html"
+              })
+              .then(function (reg) {
+                console.log("Service worker has been registered for scope: " + reg.scope);
+              });
+          }
+        }
+        
+        </script>
     <script type="text/javascript">
         $(document).ready(function () {
             $.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/jz945/data1', function (data) {

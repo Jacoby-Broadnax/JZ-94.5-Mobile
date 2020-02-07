@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="main.css">
     <title>JZ 94.5 | The People's Station</title>
     <meta name="theme-color" content="#000000"/>
+    <link rel="manifest" href="manifest.json">
     <link rel="shortcut icon" type="image/png" href="Assets/favicon 100px.png" />
     <meta name="description" content="
         The #1 radio station on the MS Gulf Coast for the best mix of R&B, Hip Hop, Blues, and Oldies!">
@@ -59,6 +60,23 @@
    
 
 </script>
+<script >
+
+    if ("serviceWorker" in navigator) {
+      if (navigator.serviceWorker.controller) {
+        console.log("service worker found, no need to register");
+      } else {
+        navigator.serviceWorker
+          .register("pwabuilder-sw.js", {
+            scope: "/index.html"
+          })
+          .then(function (reg) {
+            console.log("Service worker has been registered for scope: " + reg.scope);
+          });
+      }
+    }
+    
+    </script>
 </head>
 
 <body>
